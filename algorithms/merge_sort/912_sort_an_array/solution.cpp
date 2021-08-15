@@ -37,7 +37,7 @@ void merge(std::vector<int>& A, const int left, const int middle, const int righ
 
 void merge_sort(std::vector<int>& A, const int left, const int right)
 {
-    if (left < right)
+    if(left < right)
     {
         int middle = (left + right) / 2;
         merge_sort(A, left, middle);
@@ -62,7 +62,7 @@ int main()
         std::cin >> i;
 
     v_new = sort_array(v);
-    for (const auto& i : v_new)
+    for(const auto& i : v_new)
         std::cout << i << " ";
 
     return 0;
